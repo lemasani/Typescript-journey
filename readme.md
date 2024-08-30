@@ -7,3 +7,8 @@ it is built on top of javascript
     2. code completion
     3. refactoring
     4. shorthand notations
+
+# Drawbacks
+    1. discipline in coding is highly required
+    2. complilation
+    
