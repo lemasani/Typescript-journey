@@ -1,14 +1,9 @@
-# Typescript Journey
-A programming language used to solve the shorcoming of javascript
-it is built on top of javascript
+# Typescript OOP
+OOP - object Oriented Programming
 
-# Benefits
-    1. Static typing
-    2. code completion
-    3. refactoring
-    4. shorthand notations
+Apps are build by many objects working together
 
-# Drawbacks
-    1. discipline in coding is highly required
-    2. complilation
-    
+object has 2 parts, the state(properties), and behaviour(methods)
+
+
+a class is a blueprint for creating objects
