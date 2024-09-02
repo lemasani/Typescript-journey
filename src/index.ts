@@ -1,20 +1,16 @@
-let sales: number = 123_455_667_88
-let course: string = 'Typescript'
-let isPublished: boolean = true
+// represents the list of related constants
 
+const small =1 
+const medium = 2
+const large = 3
 
-//tyoe any
-let level 
-
-function render(document: any){
-    console.log(document);
+ const enum Size { // if defined as const it make the complier shortify the size of the javascript
+    small = 1,  // default value is 0, but we can change it and the rest are incremented by 1
+    medium,
+    large
 }
 
+// Usage
+let mySize: Size = Size.small
 
-//arrays
-let numbers = [1,2,3,4]
-
-const noString= numbers.forEach( n => n.toString())
-console.log(noString)
-
-
+console.log(mySize) // 1
