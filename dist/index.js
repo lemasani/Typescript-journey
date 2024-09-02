@@ -1,9 +1,14 @@
 "use strict";
-// can run javascript code 
-console.log('hello world');
-let age = 20;
-if (age < 50) {
-    age += 10;
+let sales = 12345566788;
+let course = 'Typescript';
+let isPublished = true;
+//tyoe any
+let level;
+function render(document) {
+    console.log(document);
 }
-console.log(age);
+//arrays
+let numbers = [1, 2, 3, 4];
+const noString = numbers.forEach(n => n.toString());
+console.log(noString);
 //# sourceMappingURL=index.js.map

@@ -1,10 +1,20 @@
-// can run javascript code 
-console.log('hello world');
+let sales: number = 123_455_667_88
+let course: string = 'Typescript'
+let isPublished: boolean = true
 
-let age: number = 20
 
-if (age < 50){
-    age += 10
+//tyoe any
+let level 
+
+function render(document: any){
+    console.log(document);
 }
 
-console.log(age)
+
+//arrays
+let numbers = [1,2,3,4]
+
+const noString= numbers.forEach( n => n.toString())
+console.log(noString)
+
+
