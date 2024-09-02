@@ -2,9 +2,10 @@
 // creating a class
 
 class Account {
-    id: number
+    readonly id: number
     owner: string
     balance: number
+    nickname?: string // makes this property optional and no need to add it on the constructor
 
     constructor(id: number, owner: string, balance: number){
         this.id = id
