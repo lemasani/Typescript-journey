@@ -22,8 +22,8 @@ class Account {
 
 }
 
-
+// creating object
 let account = new Account(1, 'John doe', 0)
 account.deposit(100)
 
-console.log(account instanceof Account) // 100
+console.log(account.balance) // 100
