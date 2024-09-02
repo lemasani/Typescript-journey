@@ -1,20 +1,15 @@
-let sales: number = 123_455_667_88
-let course: string = 'Typescript'
-let isPublished: boolean = true
+//objects
+type Employee = {
+    readonly id: number, // this make the property not editable
+    name: string,
+    retire: (date: Date)=> void
+}
 
-
-//tyoe any
-let level 
-
-function render(document: any){
-    console.log(document);
+let employee: Employee = {
+    id: 1,
+    name: 'Max',
+    retire: (date: Date) => {console.log(date)}
 }
 
 
-//arrays
-let numbers = [1,2,3,4]
-
-const noString= numbers.forEach( n => n.toString())
-console.log(noString)
-
-
+// employee.name = 'max' cannot be used if not type not defined
