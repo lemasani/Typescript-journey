@@ -1,4 +1,5 @@
 
+// creating a class
 
 class Account {
     id: number
@@ -20,3 +21,9 @@ class Account {
 
 
 }
+
+
+let account = new Account(1, 'John doe', 0)
+account.deposit(100)
+
+console.log(account instanceof Account) // 100
