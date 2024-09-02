@@ -18,13 +18,23 @@ class Account {
         this._balance += amount
     }
 
-    getBalance(): number {
+
+    // getter
+    get balance(): number {
         return this._balance
     }
+
+    // setter
+    // set balance(value: number){
+    //     if(value < 0){
+    //         throw new Error('Invalid balance')
+    //     }
+    //     this._balance = value
+    // }
 }
 
 // creating object
 let account = new Account(1, 'John doe', 0)
 account.deposit(100)
 
-console.log(account.getBalance()) // 100
+console.log(account.balance) // 100

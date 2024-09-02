@@ -12,12 +12,13 @@ class Account {
         }
         this._balance += amount;
     }
-    getBalance() {
+    // getter
+    get balance() {
         return this._balance;
     }
 }
 // creating object
 let account = new Account(1, 'John doe', 0);
 account.deposit(100);
-console.log(account.getBalance()); // 100
+console.log(account.balance); // 100
 //# sourceMappingURL=classes.js.map
