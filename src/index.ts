@@ -1,20 +1,21 @@
-let sales: number = 123_455_667_88
-let course: string = 'Typescript'
-let isPublished: boolean = true
+// functions in typescript
 
-
-//tyoe any
-let level 
-
-function render(document: any){
-    console.log(document);
+function calculateTax(income: number, taxYear: number): number {// here returns number // if return type is not defined it returns void type 
+    
+    if (taxYear < 2022)
+        return income * 0.05;
+    return income * 1
 }
 
-
-//arrays
-let numbers = [1,2,3,4]
-
-const noString= numbers.forEach( n => n.toString())
-console.log(noString)
+calculateTax(10_000, 2022)
 
 
+// if am to make a parameter optional
+function calculateTax2(income: number, taxYear?: number): number {// the ? makes it optional
+    
+    if (( taxYear || 2022) < 2022)
+        return income * 0.05;
+    return income * 1
+}
+
+calculateTax2(10_000)
