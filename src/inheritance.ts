@@ -11,7 +11,7 @@ class Person {
         return this.firstName + ' ' + this.lastName
     }
 
-    walk(){
+    protected walk(){ // protected makes the function to be inherited 
         console.log('I am walking')
     }
 }
@@ -26,6 +26,7 @@ class Student extends Person{
     }
 
     takeTest(){
+        this.walk() // the protected method is inherited in the student class
         console.log('Taking test')
     }
 }
