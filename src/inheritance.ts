@@ -33,3 +33,18 @@ class Student extends Person{
 const student = new Student('John', 'Doe', '123')
 
 console.log(student) // John Doe
+
+
+
+class Teacher extends  Person{
+
+    // method overriding
+    override get fullName(){
+        return 'Professor ' + super.fullName
+    }
+
+}
+
+const teacher = new Teacher('Max', 'wendsoffs')
+
+console.log(teacher.fullName)
