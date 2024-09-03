@@ -18,6 +18,7 @@ class Student extends Person {
         this.studentID = studentID;
     }
     takeTest() {
+        this.walk(); // the protected method is inherited in the student class
         console.log('Taking test');
     }
 }
@@ -36,6 +37,7 @@ class Principle extends Person {
 }
 const teacher = new Teacher('Max', 'wendsoffs');
 console.log(teacher.fullName);
+// polymorphism
 printNames([
     new Student('Max', 'smith', '123'),
     new Teacher('Mosh', 'Doe'),
