@@ -29,6 +29,20 @@ class Teacher extends Person {
         return 'Professor ' + super.fullName;
     }
 }
+class Principle extends Person {
+    get fullName() {
+        return 'Principal ' + super.fullName;
+    }
+}
 const teacher = new Teacher('Max', 'wendsoffs');
 console.log(teacher.fullName);
+printNames([
+    new Student('Max', 'smith', '123'),
+    new Teacher('Mosh', 'Doe'),
+    new Principle('Somethn', 'Wendsoffs')
+]);
+function printNames(people) {
+    console.log('Printing Names....');
+    people.forEach(person => console.log(person.fullName));
+}
 //# sourceMappingURL=inheritance.js.map
