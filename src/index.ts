@@ -1,20 +1,10 @@
-let sales: number = 123_455_667_88
-let course: string = 'Typescript'
-let isPublished: boolean = true
 
 
-//tyoe any
-let level 
+// Generic Classes
 
-function render(document: any){
-    console.log(document);
+class KeyValuePair <K, V>{
+    constructor(public key: K, public value: V){}
 }
 
-
-//arrays
-let numbers = [1,2,3,4]
-
-const noString= numbers.forEach( n => n.toString())
-console.log(noString)
-
-
+const pair = new KeyValuePair<number, string>(2, 'am')
+pair
